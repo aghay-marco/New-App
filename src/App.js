@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
+import React from "react";
+import Greeting from "./Components/Greeting";
+import Website from './Components/Welcome'
+const App = () => {
+  // const clickHandler = (props) => {
+  //   alert("hi" + " " + props)
+  // }
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <div style={{ display: 'flex', justifyContent: 'center', fontSize: 22 }} >
+
+      {/* <Website age={25} handler={() => clickHandler("Mahdi")} />
+      <Website name="amir" age={24} handler={() => clickHandler("amir")} /> */}
+      <Greeting isLoggedIn={true} />
+    </div >
+  )
 }
 
 export default App;
