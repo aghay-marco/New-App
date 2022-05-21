@@ -1,23 +1,19 @@
 import React from 'react';
-import './Students.css';
+import Student from './student/student';
 
-const Student = () => {
+const Students = (props) => {
     return (
-        <div className="students">
-            <label>شماره دانش آموزش : 1 </label>
-            <label>نام و نام خانوادگی</label>
-            <input type='text' />
-
-            <label>کلاس </label>
-            <input type='text' />
-
-            <label>شماره تلفن</label>
-            <input type="number" />
-
-            <label>ایمیل</label>
-            <input type='email' />
-        </div>
+        props.studentsList.map((student, index) =>
+            <Student
+                key={index}
+                id={student.id}
+                name={student.name}
+                classNumber={student.classNumber}
+                phoneNumber={student.phoneNumber}
+                email={student.email}
+            />
+        )
     )
 }
 
-export default Student;
+export default Students;
