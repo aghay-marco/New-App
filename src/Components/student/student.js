@@ -1,6 +1,6 @@
 import React from 'react';
 import './Students.css'
-
+import Button from '../UI/button/button';
 const Student = (props) => {
     return (
         <div className="students">
@@ -20,6 +20,12 @@ const Student = (props) => {
             <label style={{ color: "red" }} onClick={props.deleted}>
                 حذف
             </label>
+            <Button
+                btnType="danger"
+                clicked={props.deleted}
+            >
+                حذف
+            </Button>
         </div>
     )
 }

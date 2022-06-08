@@ -1,0 +1,22 @@
+.button{
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: transparent;
+    justify-content: center;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font: inherit;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.danger{
+    color:white;
+    background-color: red;
+}
+
+.success{
+    color: white;
+    background-color: green;
+}
