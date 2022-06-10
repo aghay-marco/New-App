@@ -27,8 +27,15 @@ input[type=number], input[type=email]{
     direction: ltr;
 }
 
-@media(min-width:1000px){
+.student-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+@media(min-width:500px){
     .students{
-        width: 50%;
+        width: 450px;
     }
 }
